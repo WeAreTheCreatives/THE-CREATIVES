@@ -1,0 +1,285 @@
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #000;         /* Black background */
+    color: #f0f0f0;           /* Light gray text for contrast */
+    padding: 20px;
+  }
+  header {
+    background-image: url('image_fx_ (8).jpg');  /* Change to your file name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    color: orange;
+    text-align: center;
+    padding: 120px 20px;
+  
+    position: relative;
+  }
+  
+  
+  header * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  header {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  header h1 {
+    font-size: 3rem;  /* You can try 4rem for even larger */
+    color: orange;    /* Optional: make it pop */
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+
+  header {
+    background-image: url('image_fx_ (8).jpg');  /* Change to your file name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    color: orange;
+    text-align: center;
+    padding: 120px 20px;
+  
+    position: relative;
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* black overlay */
+    z-index: 0;
+  }
+  
+  header * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: orange;            /* Bright orange */
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff8000;           /* A slightly deeper orange */
+  }
+
+section {
+  margin-bottom: 50px;
+  background: #111;         /* Darker section background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 165, 0, 0.3); /* Orange glow */
+} 
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #projects {
+    background: #000;
+    color: orange;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .project-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    width: 600%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain; /* or 'cover' if you want it to fill */
+    margin-bottom: 15px;
+  }
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #FFA500;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+}
+
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+
+  h1, h2, h3 {
+    color: orange;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap; /* makes it responsive on smaller screens */
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-logo {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-logo img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* change this for logo size */
+    filter: drop-shadow(0 0 10px orange);
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .more-about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: #111;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .about-box {
+    flex: 1;
+    min-width: 250px;
+    color: #f0f0f0;
+  }
+  
+  .about-box h3 {
+    color: orange;
+    margin-bottom: 15px;
+  }
+  
+  .about-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .about-box ul li::before {
+    content: "✔ ";
+    color: orange;
+  }
+  .tool-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left; /* or 'left' if you want */
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .tool-icons img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .tool-icons img:hover {
+    transform: scale(1.2);
+  }
+  #contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: #111;
+    color: orange;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-icons img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-icons img:hover {
+    transform: scale(1.2);
+  }
+  .view-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #FFA500;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #ffbb33;
+  }
+  
