@@ -6,6 +6,7 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
@@ -91,6 +92,27 @@ We are a team of young, passionate designers driven by creativity and innovation
       
       </div>
 
+      <div class="project-card">
+        <h3 class="project-title">The Creatives for NLIL</h3>
+        <div class="project-gallery" id="poster-gallery" )">
+          <img src="NLIL/first page.png" alt="Slide 1" class="gallery-img")">
+          <img src="NLIL/MAIN EVENT POSTER.png" alt="Slide 2" class="gallery-img")">
+          <img src="NLIL/CONFIRMED GUESTS.png" alt="Slide 3" class="gallery-img")">
+          <img src="NLIL/PARTNERSHIP ANNOUNCEMENTS.png" alt="Slide 4" class="gallery-img")">
+          <img src="NLIL/TICKET POST.png" alt="Slide 5" class="gallery-img")">
+          <img src="NLIL/last page.png" alt="Slide 6" class="gallery-img")">
+        </div>
+      
+        <button class="view-full-button" onclick="openModal()">Click Image To View In Full </button>
+      </div>
+      <!-- Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+
+      
+
 
     </div>
   </section>
@@ -118,6 +140,9 @@ We are a team of young, passionate designers driven by creativity and innovation
     <p>© 2025 The Creatives. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  
+  
+<script src="script.js"></script>
 </body>
 </html>
+
